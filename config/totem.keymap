@@ -27,6 +27,40 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CTRLC {
+            bindings = <&none>;
+            key-positions = <12 13>;
+        };
+
+        CTRLV {
+            bindings = <&none>;
+            key-positions = <13 14>;
+        };
+
+        TAP {
+            bindings = <&none>;
+            key-positions = <2 3>;
+        };
+
+        ESCC {
+            bindings = <&none>;
+            key-positions = <3 4>;
+        };
+
+        CTRLZ {
+            bindings = <&none>;
+            key-positions = <11 13>;
+        };
+
+        CTRLX {
+            bindings = <&none>;
+            key-positions = <11 12>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
