@@ -95,7 +95,7 @@
             bindings = <
        &kp SEMICOLON  &kp O         &kp I  &kp U  &kp Y    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
        &kp P          &kp L         &kp K  &kp J  &kp H    &none         &none         &none         &none         &none
-&none  &none          &kp QUESTION  &kp M  &kp N  &kp B    &none         &none         &none         &none         &none         &bt BT_CLR
+&none  &trans         &kp QUESTION  &kp M  &kp N  &kp B    &none         &none         &none         &none         &none         &bt BT_CLR
                                     &none  &none  &none    &none         &none         &none
             >;
         };
