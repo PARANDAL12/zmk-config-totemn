@@ -31,32 +31,32 @@
         compatible = "zmk,combos";
 
         CTRLC {
-            bindings = <&none>;
+            bindings = <&kp LC(C)>;
             key-positions = <12 13>;
         };
 
         CTRLV {
-            bindings = <&none>;
+            bindings = <&kp LC(V)>;
             key-positions = <13 14>;
         };
 
         TAP {
-            bindings = <&none>;
+            bindings = <&kp TAB>;
             key-positions = <2 3>;
         };
 
         ESCC {
-            bindings = <&none>;
+            bindings = <&kp ESC>;
             key-positions = <3 4>;
         };
 
         CTRLZ {
-            bindings = <&none>;
+            bindings = <&kp LC(Z)>;
             key-positions = <11 13>;
         };
 
         CTRLX {
-            bindings = <&none>;
+            bindings = <&kp LC(X)>;
             key-positions = <11 12>;
         };
     };
