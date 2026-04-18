@@ -23,12 +23,12 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <180>;
-            flavor = "balanced";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <120>;
             retro-tap;
             hold-while-undecided;
-            quick-tap-ms = <100>;
+            quick-tap-ms = <150>;
             hold-trigger-on-release;
         };
     };
@@ -72,19 +72,19 @@
 
         base {
             bindings = <
-                 &kp TAB          &kp W             &kp E          &kp R        &kp T          &kp Y        &kp U        &kp I      &kp O      &kp SEMICOLON
-                 &mt LEFT_ALT A   &mt LEFT_SHIFT S  &kp D          &kp F        &mt LCTRL G    &kp H        &kp J        &kp K      &kp L      &kp P
-&lt 3 RIGHT_ALT  &holdtap CAPS Q  &kp Z             &kp X          &kp C        &kp V          &kp B        &kp N        &kp M      &kp COMMA  &kp PERIOD     &holdtap SLASH QUESTION
-                                                    &kp BACKSPACE  &lt 2 SPACE  &lt 1 ENTER    &lt 1 ENTER  &lt 2 SPACE  &kp RCTRL
+                 &kp CAPS             &kp W                  &kp E          &kp R        &kp T               &kp Y        &kp U        &kp I      &kp O      &kp SEMICOLON
+                 &holdtap LEFT_ALT A  &holdtap LEFT_SHIFT S  &kp D          &kp F        &holdtap LCTRL G    &kp H        &kp J        &kp K      &kp L      &kp P
+&lt 3 RIGHT_ALT  &kp Q                &kp Z                  &kp X          &kp C        &kp V               &kp B        &kp N        &kp M      &kp COMMA  &kp PERIOD     &mt SLASH QUESTION
+                                                             &kp BACKSPACE  &lt 2 SPACE  &lt 1 ENTER         &lt 1 ENTER  &lt 2 SPACE  &kp RCTRL
             >;
         };
 
         nav_num {
             bindings = <
-         &kp COMMA                 &holdtap LS(NUMBER_7) NUMBER_7  &holdtap LS(NUMBER_8) NUMBER_8  &holdtap LS(NUMBER_9) NUMBER_9  &kp EQUAL                         &kp LC(PAGE_UP)    &kp LC(UP_ARROW)  &mmv MOVE_UP    &kp LC(DOWN)     &kp SQT
-         &holdtap LS(MINUS) MINUS  &holdtap LS(NUMBER_4) NUMBER_4  &holdtap LS(N5) NUMBER_5        &holdtap LS(NUMBER_6) NUMBER_6  &kp PLUS                          &kp LC(PAGE_DOWN)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_PARENTHESIS
-&kp DEL  &kp DOT                   &holdtap LS(NUMBER_1) NUMBER_1  &holdtap LS(NUMBER_2) NUMBER_2  &holdtap LS(NUMBER_3) NUMBER_3  &holdtap LS(NUMBER_0) NUMBER_0    &msc SCRL_DOWN     &mkp MB1          &msc SCRL_DOWN  &mkp MB2         &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
-                                                                   &trans                          &trans                          &trans                            &trans             &trans            &mkp MB3
+         &kp COMMA            &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &kp EQUAL                    &kp LC(PAGE_UP)    &kp LC(UP_ARROW)  &mmv MOVE_UP    &kp LC(DOWN)     &kp SQT
+         &mt LS(MINUS) MINUS  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) NUMBER_5        &mt LS(NUMBER_6) NUMBER_6  &kp PLUS                     &kp LC(PAGE_DOWN)  &mmv MOVE_LEFT    &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &kp LEFT_PARENTHESIS
+&kp DEL  &kp DOT              &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_0) NUMBER_0    &msc SCRL_DOWN     &mkp MB1          &msc SCRL_DOWN  &mkp MB2         &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES
+                                                         &trans                     &trans                     &trans                       &trans             &trans            &mkp MB3
             >;
         };
 
