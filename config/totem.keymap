@@ -73,6 +73,11 @@
             bindings = <&kp LC(X)>;
             key-positions = <11 12>;
         };
+
+        shiftW {
+            bindings = <&kp LS(W)>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
@@ -82,7 +87,7 @@
             bindings = <
                  &kp CAPS              &kp W                  &kp E          &kp R        &kp T               &kp Y        &kp U        &kp I      &kp O      &kp SEMICOLON
                  &Aholdtap LEFT_ALT A  &holdtap LEFT_SHIFT S  &kp D          &kp F        &holdtap LCTRL G    &kp H        &kp J        &kp K      &kp L      &kp P
-&lt 3 RIGHT_ALT  &kp Q                 &kp Z                  &kp X          &kp C        &kp V               &kp B        &kp N        &kp M      &kp COMMA  &kp PERIOD     &mt SLASH QUESTION
+&lt 3 RIGHT_ALT  &Aholdtap LS(Q) Q     &kp Z                  &kp X          &kp C        &kp V               &kp B        &kp N        &kp M      &kp COMMA  &kp PERIOD     &mt SLASH QUESTION
                                                               &kp BACKSPACE  &lt 2 SPACE  &lt 1 ENTER         &lt 1 ENTER  &lt 2 SPACE  &kp RCTRL
             >;
         };
