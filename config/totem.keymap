@@ -39,14 +39,6 @@
             require-prior-idle-ms = <120>;
             flavor = "tap-preferred";
         };
-
-        ko_COPY: ko_shift {
-            compatible = "zmk,behavior-key-override";
-            #binding-cells = <0>;
-            key = <&kp C>;
-            modifiers = <(MOD_LSFT)>;
-            override = <&kp LS(LC(C))>;
-        };
     };
 
     combos {
