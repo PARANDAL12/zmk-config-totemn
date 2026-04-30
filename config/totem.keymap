@@ -16,13 +16,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
- macros {
-        ctrl_shift: ctrl_shift {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <1>;
-            bindings = <&kp LC(SFT(ARG0))>;
-        };
-    };
     behaviors {
         holdtap: holdtap {
             compatible = "zmk,behavior-hold-tap";
@@ -46,12 +39,19 @@
             require-prior-idle-ms = <120>;
             flavor = "tap-preferred";
         };
-        shift_cs: shift_cs {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <1>;
-            bindings = <&kp 0>, <&ctrl_shift 0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+        ko_example: key_override_example {
+            compatible = "zmk,behavior-key-override";
+            #binding-cells = <0>;
+            
+            // 트리거 조건: 1을 누르고 Shift가 눌려있을 때
+            key = <&kp N1>;
+            modifiers = <(MOD_LSFT)>;
+            
+            // 결과: 1 대신 '!' 대신 다른 문자 (예: '#') 출력
+            // 실제 구현에서는 원하는 다른 키 매핑을 넣습니다.
+            override = <&kp HASH>;
         };
+        // --- key_override 정의 끝 ---
     };
     
     combos {
