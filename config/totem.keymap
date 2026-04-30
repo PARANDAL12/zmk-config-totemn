@@ -44,12 +44,12 @@
             #binding-cells = <0>;
             
             // 트리거 조건: 1을 누르고 Shift가 눌려있을 때
-            key = <&kp N1>;
-            modifiers = <(MOD_LSFT)>;
+            key = <&kp>;
+            modifiers = <()>;
             
             // 결과: 1 대신 '!' 대신 다른 문자 (예: '#') 출력
             // 실제 구현에서는 원하는 다른 키 매핑을 넣습니다.
-            override = <&kp HASH>;
+            override = <&kp>;
         };
         // --- key_override 정의 끝 ---
     };
