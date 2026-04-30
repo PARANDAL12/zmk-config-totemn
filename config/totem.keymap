@@ -39,6 +39,15 @@
             require-prior-idle-ms = <120>;
             flavor = "tap-preferred";
         };
+    key-overrides {
+        compatible = "zmk,key-override";
+
+        // 예: 왼쪽 Shift를 누르고 'o'를 누르면 'O' 대신 'ö'가 나오게 함
+        my_override: o_umlaut {
+            key = <&kp O>;                // 원본 키
+            modifiers = <(MOD_LSFT)>;    // 감지할 모디파이어 (Shift)
+            replacement = <&kp RA(O)>;   // 대체 키 (RA는 RAlt/Option 예시)
+        };
     };
 
     combos {
