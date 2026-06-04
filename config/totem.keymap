@@ -40,13 +40,31 @@
             flavor = "tap-preferred";
         };
 
-        ALT_C: ALT_C {
+        SHIFT_C: SHIFT_C {
             compatible = "zmk,behavior-mod-morph";
-            label = "ALT_C";
-            bindings = <&kp C>, <&kp LC(LS(F10))>;
+            label = "SHIFT_C";
+            bindings = <&kp C>, <&kp LC(LS(C))>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RALT)>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        SHIFT_V: SHIFT_V {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_V";
+            bindings = <&kp V>, <&kp LS(LC(V))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
+
+        SHIFT_F: SHIFT_F {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFT_F";
+            bindings = <&kp F>, <&kp LS(LC(F))>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
@@ -95,8 +113,8 @@
         base {
             bindings = <
                  &kp CAPS              &kp W                  &kp E          &kp R        &kp T               &kp Y        &kp U        &kp I      &kp O      &kp SEMICOLON
-                 &Aholdtap LEFT_ALT A  &holdtap LEFT_SHIFT S  &kp D          &kp F        &holdtap LCTRL G    &kp H        &kp J        &kp K      &kp L      &kp P
-&lt 3 RIGHT_ALT  &Aholdtap LS(Q) Q     &kp Z                  &kp X          &ALT_C       &kp V               &kp B        &kp N        &kp M      &kp COMMA  &kp PERIOD     &mt SLASH QUESTION
+                 &Aholdtap LEFT_ALT A  &holdtap LEFT_SHIFT S  &kp D          &SHIFT_F     &holdtap LCTRL G    &kp H        &kp J        &kp K      &kp L      &kp P
+&lt 3 RIGHT_ALT  &Aholdtap LS(Q) Q     &kp Z                  &kp X          &SHIFT_C     &SHIFT_V            &kp B        &kp N        &kp M      &kp COMMA  &kp PERIOD     &mt SLASH QUESTION
                                                               &kp BACKSPACE  &lt 2 SPACE  &lt 1 ENTER         &lt 1 ENTER  &lt 2 SPACE  &kp RCTRL
             >;
         };
