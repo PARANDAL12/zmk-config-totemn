@@ -123,17 +123,17 @@
 
         CTRLV {
             bindings = <&kp LC(V)>;
-            key-positions = <13 14>;
+            key-positions = <14 4>;
         };
 
         TAP {
             bindings = <&kp TAB>;
-            key-positions = <2 3>;
+            key-positions = <2 12>;
         };
 
         ESCC {
             bindings = <&kp ESC>;
-            key-positions = <3 4>;
+            key-positions = <3 13>;
         };
 
         CTRLZ {
@@ -148,7 +148,7 @@
 
         shiftW {
             bindings = <&kp LS(W)>;
-            key-positions = <1 2>;
+            key-positions = <1 11>;
         };
     };
 
