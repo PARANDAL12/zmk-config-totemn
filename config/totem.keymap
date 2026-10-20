@@ -123,7 +123,7 @@
 
         CTRLV {
             bindings = <&kp LC(V)>;
-            key-positions = <14 4>;
+            key-positions = <14 13>;
         };
 
         TAP {
